@@ -1,4 +1,5 @@
 
+//find the number of pairs in an array, that when summed, is an even sum
 public class EvenPairSumCount {
 
 	public static void main(String[] args) {
@@ -12,7 +13,7 @@ public class EvenPairSumCount {
 		int evens = 0;
 		int odds = 0;
 		
-		
+		//find all the evens and odds first
 		for (int i = 0; i < A.length; i++)
 		{
 			if (A[i]%2 == 0)
@@ -26,7 +27,7 @@ public class EvenPairSumCount {
 		//N * (N-1)/2
 		int N = evens;
 		int M = odds;
-		
+		//calculate the number of sums for both evens and odds
 		int result1 = M * (M-1)/2;
 		int result2 = N * (N-1)/2;
 		
